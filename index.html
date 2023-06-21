@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contoh AdminLTE dengan CDN</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/css/adminlte.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- Preloader -->
+
+			<!-- Navbar -->
+			<nav class="main-header navbar navbar-expand navbar-white navbar-light">
+				<!-- Left navbar links -->
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" data-widget="pushmenu" href="#" role="button"
+							><i class="fas fa-bars"></i
+						></a>
+					</li>
+					<li class="nav-item d-none d-sm-inline-block">
+						<a href="/" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item d-none d-sm-inline-block">
+						<a href="/todos" class="nav-link">Todos</a>
+					</li>
+				</ul>
+
+				<!-- Right navbar links -->
+			</nav>
+			<!-- /.navbar -->
+
+			<!-- Main Sidebar Container -->
+			<aside class="main-sidebar sidebar-dark-primary elevation-4">
+				<!-- Brand Logo -->
+				<a href="index3.html" class="brand-link">
+					<img
+						src="dist/img/AdminLTELogo.png"
+						alt="AdminLTE Logo"
+						class="brand-image img-circle elevation-3"
+						style="opacity: 0.8"
+					/>
+					<span class="brand-text font-weight-light">TugasMu</span>
+				</a>
+
+				<!-- Sidebar -->
+				<div class="sidebar">
+					<!-- Sidebar user panel (optional) -->
+					<div class="user-panel mt-3 pb-3 mb-3 d-flex">
+						<div class="image">
+							<img
+								src="dist/img/user2-160x160.jpg"
+								class="img-circle elevation-2"
+								alt="User Image"
+							/>
+						</div>
+						<div class="info">
+							<a href="#" class="d-block">Mizurikito</a>
+						</div>
+					</div>
+
+					<!-- Sidebar Menu -->
+					<nav class="mt-2">
+						<ul
+							class="nav nav-pills nav-sidebar flex-column"
+							data-widget="treeview"
+							role="menu"
+							data-accordion="false"
+						>
+							<!-- Add icons to the links using the .nav-icon class
+           with font-awesome or any other icon font library -->
+
+							<li class="nav-item">
+								<a href="pages/widgets.html" class="nav-link">
+									<i class="nav-icon fas fa-th"></i>
+									<p>
+										Widgets
+										<span class="right badge badge-danger">New</span>
+									</p>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<!-- /.sidebar-menu -->
+				</div>
+				<!-- /.sidebar -->
+			</aside>
+
+			<!-- Content Wrapper. Contains page content -->
+			<div class="content-wrapper">
+				<!-- Content Header (Page header) -->
+				<div class="content-header">
+					<div class="container-fluid">
+						<div class="row mb-2">
+							<div class="col-sm-6">
+								<h1 class="m-0">Selamat Datang Admin</h1>
+							</div>
+							<!-- /.col -->
+							<div class="col-sm-6">
+								<ol class="breadcrumb float-sm-right">
+									<li class="breadcrumb-item"><a href="#">Home</a></li>
+									<li class="breadcrumb-item active">Dashboard</li>
+								</ol>
+							</div>
+							<!-- /.col -->
+						</div>
+						<!-- /.row -->
+					</div>
+					<!-- /.container-fluid -->
+				</div>
+				<!-- /.content-header -->
+
+				<!-- Main content -->
+				<section class="content">
+					<div class="container-fluid">
+						<!-- Small boxes (Stat box) -->
+						<div class="row">
+							<!-- ./col -->
+							<div class="col-lg-3 col-6">
+								<!-- Total Postingan-->
+								<div class="small-box bg-danger">
+									<div class="inner">
+										<h3>65</h3>
+
+										<p>Total Postingan</p>
+									</div>
+									<div class="icon">
+										<i class="ion ion-pie-graph"></i>
+									</div>
+								</div>
+							</div>
+							<!-- ./col -->
+
+							<!-- ./col -->
+							<div class="col-lg-3 col-6">
+								<!-- small box -->
+								<div class="small-box bg-warning">
+									<div class="inner">
+										<h3>44</h3>
+
+										<p>User Registrations</p>
+									</div>
+									<div class="icon">
+										<i class="ion ion-person-add"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.row -->
+						<!-- Main row -->
+
+						<!-- /.row (main row) -->
+					</div>
+					<!-- /.container-fluid -->
+				</section>
+
+				<section>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="card">
+									<div class="card-header">
+										<h3 class="card-title">Data User</h3>
+									</div>
+									<!-- /.card-header -->
+									<div class="card-body">
+										<table class="table table-bordered">
+											<thead>
+												<tr>
+													<th style="width: 10px">ID</th>
+													<th style="width: 100px">Username</th>
+													<th style="width: 100px">Email</th>
+													<th style="width: 40px">Role</th>
+													<th style="width: 40px">Ban User</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1.</td>
+													<td>Mizurikito</td>
+													<td>Mizurikito@gmail.com</td>
+
+													<td>
+														<button
+															type="button"
+															class="btn btn-block btn-success"
+														>
+															Jadikan Admin
+														</button>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-block btn-danger"
+														>
+															Danger
+														</button>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- /.card-body -->
+								</div>
+								<!-- /.card -->
+
+								<!-- /.card -->
+							</div>
+							<!-- /.col -->
+
+							<!-- /.col -->
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="card">
+									<div class="card-header">
+										<h3 class="card-title">Data User</h3>
+									</div>
+									<!-- /.card-header -->
+									<div class="card-body">
+										<table class="table table-bordered">
+											<thead>
+												<tr>
+													<th style="width: 10px">ID</th>
+													<th style="width: 600px">Username</th>
+													<th style="width: 100px">Total Postingan</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1.</td>
+													<td>Mizurikito</td>
+													<td>1</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- /.card-body -->
+								</div>
+								<!-- /.card -->
+
+								<!-- /.card -->
+							</div>
+							<!-- /.col -->
+
+							<!-- /.col -->
+						</div>
+					</div>
+				</section>
+				<!-- /.content -->
+			</div>
+			<!-- /.content-wrapper -->
+			<footer class="main-footer">
+				<strong
+					>Copyright &copy; 2023
+					<a href="https://adminlte.io">TugasMU</a>.</strong
+				>
+				All rights reserved.
+				<div class="float-right d-none d-sm-inline-block">
+					<b>Version</b> 1.2.0
+				</div>
+			</footer>
+
+			<!-- Control Sidebar -->
+			<aside class="control-sidebar control-sidebar-dark">
+				<!-- Control sidebar content goes here -->
+			</aside>
+			<!-- /.control-sidebar -->
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/js/adminlte.min.js"></script>
+	</body>
+</html>
